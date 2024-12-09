@@ -1,0 +1,155 @@
+
+html, body
+{
+    overflow: hidden;
+}
+
+/* body? */
+.container-txt
+{
+
+    position: relative;
+    background-color: rgb(51, 31, 4);
+
+}
+
+.container-main
+{
+    /* background-color: antiquewhite; */
+    /* position: f; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 130px;
+}
+.container-main div.img1,div.img2
+{
+    width: 400px;    /* Fixed width */
+    height: 400px;   /* Fixed height */
+    overflow: hidden; /* Hide any overflow content */
+    display: flex;    /* Flexbox for centering content */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    border: 2px solid #e48989;
+    margin: 20px;
+}
+div.imgbtwn
+{
+    font-size: 50px;
+}
+div.img1 img, div.img2 img
+{
+    width: 100%; /* Make the image width 100% of the div */
+    height: 100%; /* Make the image height 100% of the div */
+    object-fit: cover;
+    /* gap: 10; */
+}
+
+@media (max-width:600px) {
+    .container-main{flex-direction: column;}
+    
+}
+
+.animated-button {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 16px 36px;
+    border: 4px solid;
+    border-color: transparent;
+    font-size: 16px;
+    background-color: rgb(255, 184, 184);
+    border-radius: 100px;
+    font-weight: 600;
+    color: rgb(42, 2, 2);
+    box-shadow: 0 0 0 2px rgb(185, 145, 145);
+    cursor: pointer;
+    /* font-family: "Playwrite AR", cursive; */
+    font-family: "Playwrite AR", cursive;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    overflow: hidden;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+    margin: 10px;
+  }
+  
+  .animated-button svg {
+    position: absolute;
+    width: 24px;
+    fill: rgb(220, 135, 135);
+    z-index: 9;
+    transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  
+  .animated-button .arr-1 {
+    right: 16px;
+  }
+  
+  .animated-button .arr-2 {
+    left: -25%;
+  }
+  
+  .animated-button .circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20px;
+    height: 20px;
+    background-color: rgb(220, 135, 135);
+    border-radius: 50%;
+    opacity: 0;
+    transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  
+  .animated-button .text {
+    position: relative;
+    z-index: 1;
+    transform: translateX(-12px);
+    transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  
+  .animated-button:hover {
+    box-shadow: 0 0 0 12px transparent;
+    color: black;
+    border-radius: 12px;
+  }
+  
+  .animated-button:hover .arr-1 {
+    right: -25%;
+  }
+  
+  .animated-button:hover .arr-2 {
+    left: 16px;
+  }
+  
+  .animated-button:hover .text {
+    transform: translateX(12px);
+  }
+  
+  .animated-button:hover svg {
+    fill: #212121;
+  }
+  
+  .animated-button:active {
+    scale: 0.95;
+    box-shadow: 0 0 0 4px white;
+  }
+  
+  .animated-button:hover .circle {
+    width: 220px;
+    height: 220px;
+    opacity: 1;
+  }
+  
+  
+@keyframes move-hearts {
+    0% { transform: translateX(0); }
+      25% { transform: translateX(-1px); }
+      50% { transform: translateX(1px); }
+      75% { transform: translateX(-1px); }
+      100% { transform: translateX(0); }
+    
+}
