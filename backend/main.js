@@ -35,7 +35,7 @@ next_btn.onclick= ()=>
 {
     // next_btn.disabled = true;
     setTimeout(()=>
-    {next_btn.focus()}, 500);
+    {next_btn.focus();alert("meo")}, 500);
     console.log(bois[count], girls[count])
     img_boi.src = `imgs/${bois[count]}`
     img_girl.src = `imgs/${girls[count]}`
