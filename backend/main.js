@@ -33,9 +33,9 @@ const girls = [
 
 next_btn.onclick= ()=>
 {
-    next_btn.disabled = true;
+    // next_btn.disabled = true;
     setTimeout(()=>
-    {next_btn.disabled=false}, 500);
+    {next_btn.focus()}, 500);
     console.log(bois[count], girls[count])
     img_boi.src = `imgs/${bois[count]}`
     img_girl.src = `imgs/${girls[count]}`
