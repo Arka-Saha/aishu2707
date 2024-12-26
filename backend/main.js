@@ -16,7 +16,7 @@ const bois = [
     "plankton-1.jpeg",
     "tears-2.avif",
     "watermelon-2.webp",
-    "whenifly-2.webp",'lovetoday-1.jpeg','doraemon-2.png', 'mismatched-1.jpeg', 'itsokay-1.jxl','oggy-1.jpeg',
+    "whenifly-2.webp",'lovetoday-1.jpeg','doraemon-2.png', 'mismatched-1.jpeg', 'itsokay-1.jpeg','oggy-1.jpeg',
     'mrbean-1.webp', "billu-1.jpeg",
     'orkho2.png'
 ]
