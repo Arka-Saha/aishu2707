@@ -58,11 +58,12 @@ div.quote
     width: 350px;    /* Fixed width */
     height: 350px;
   }
-  .container-txt{font-size: large;}
+  .container-txt{font-size: large; margin-top: 20px;}
   
 }
 
 button {
+  
     position: relative;
     padding: 12px 35px;
     background: #fec195;
