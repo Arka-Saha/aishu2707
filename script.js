@@ -2,7 +2,7 @@ let txt = document.getElementsByClassName("txt")[0];
 
 // txt.textContent ="h11e";
 
-let cards = document.querySelector(".card");
+const cards = document.querySelectorAll('.card');
 
 cards.forEach(card => {
 
