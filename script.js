@@ -17,7 +17,7 @@ cards.forEach(card => {
 
         
         }
-    card.ondrag = (event) =>
+    card.touchmove = (event) =>
     {
         console.log('ss');
         
@@ -32,7 +32,7 @@ cards.forEach(card => {
 
     card.onclick = () =>
     {
-        txt.textContent = "ar";
+        txt.textContent = "arkaa";
     }
     // card.ondra
     card.addEventListener('mousedown', func);
