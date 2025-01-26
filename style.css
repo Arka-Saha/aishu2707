@@ -7,7 +7,32 @@ html, body
     background-color: rgb(177, 193, 255);
 }
 
-h1
+.first-div
+{
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    /* background-color: rebeccapurple; */
+    background-color: rgb(80, 108, 221);
+    /* visibility: hidden; */
+    transition: 1s ease;
+    opacity: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* opacity: 0%; */
+}
+
+.first-div h1
+{
+    font-family: "Inter Tight", serif;
+    font-optical-sizing: auto;
+    /* font-weight: <weight>; */
+    font-style: normal;
+    color: white;
+}
+
+.heading
 {
     padding-top: 50px;
     font-family: "Quicksand", serif;
@@ -15,8 +40,11 @@ h1
     /* font-weight: <weight>; */
     font-style: normal;
 }
+
 .card-container
 {
+    /* visibility: inherit; */
+    /* background-color: red; */
     height: 100vh;
     width: 100vw;
     display: flex;
@@ -86,6 +114,9 @@ h1
 .btn:hover{
     background-color: rgb(72, 87, 143);
 }
+
+/* .btn:click */
+
 
 @media (max-width:600px) {
     .card-container
