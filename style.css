@@ -1,141 +1,239 @@
-html, body
+html,body
 {
     height: 100vh;
+    padding: 0;
     margin: 0;
     overflow: hidden;
-    padding: 0;
-    background-color: rgb(177, 193, 255);
+    background-color: rgb(133, 206, 255);
 }
 
-.first-div
+#head
 {
-    height: 100vh;
-    width: 100vw;
-    position: absolute;
-    /* background-color: rebeccapurple; */
-    background-color: rgb(80, 108, 221);
-    /* visibility: hidden; */
-    transition: 1s ease;
-    opacity: 95%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    /* opacity: 0%; */
-}
-
-.first-div h1
-{
+    margin-top: 140px;
+    font-size: 70px;
+    /* align-self: baseline; */
+    /* align-content: center; */
+    /* align-content: end; */
+    /* align-items: center; */
+    text-align: center;
+    max-height: 70px;
     font-family: "Inter Tight", serif;
     font-optical-sizing: auto;
-    /* font-weight: <weight>; */
     font-style: normal;
-    color: white;
+    color: rgb(80, 97, 167);
 }
 
-.heading
+.rose-container
 {
-    padding-top: 50px;
-    font-family: "Quicksand", serif;
-    font-optical-sizing: auto;
-    font-weight: 100;
-    font-style: normal;
-}
-
-.card-container
-{
-    /* visibility: inherit; */
-    /* background-color: red; */
-    height: 100vh;
+    position: absolute;
     width: 100vw;
-    display: flex;
-    justify-content: center;
-    /* align-items: center; */
-    padding-top: 100px;
+    background-color: rgb(133, 206, 255);
+    height: 100vh;
 }
 
-.card
+.rose-main
 {
-    /* left: 50%; */
+    background-color: rgb(133, 206, 255);
+    width: 300px;
+    height: 70vh;
+    /* display: ; */
+    display: flex;
     justify-content: center;
+    align-content: center;
     align-items: center;
-    height: 300px;
-    /* display: block; */
-    border-radius: 10px;
-    width: 500px;
-    background-color: rgb(174, 113, 235);
+    /* padding-top: -10px; */
+    /* justify-items: center; */
 }
 
-.card .card-top
+.rose
 {
-    display: flex;
-    gap: 10px;
-    background-color: rgb(239, 215, 238);
-    border-radius: 10px 10px 0 0;
-    padding: 10px 0 10px 15px;
-    padding-top: 10px;
-}
-
-.card .txt1
-{
-    padding: 30px 30px 0 30px;
-    font-family: "Montserrat", serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-    text-align: center;
-    line-height: 1.5;
-}
-
-.card .txt2
-{
-    padding: 20px 30px 0 30px;
-    font-family: "Montserrat", serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-    text-align: center;
-    line-height: 1.5;
-}
-
-.card .btn
-{
-    height: 40px;
+    background-color: rgb(1, 102, 27);
+    /* size: 10vw; */
+    height: 20px;
     width: 90px;
-    border-radius: 20px;
-    border: none;
-    margin-top: 20px;
-    background-color: rgb(109, 109, 213);
-    transition: 0.5s ease;
-    font-size: 20px;
-    /* margin-left: calc(50%)-90px; */
-    /* margin-right: 50%-40px; */
+    border-radius: 100px 100px 10px 10px;
+    position: absolute;
+    margin-top: 120px;
+    z-index: 10;
+    animation: rose-anim 10s ease 1;
+    /* animation-delay: 2s; */
+    /* opacity: ; */
 }
 
-.btn:hover{
-    background-color: rgb(72, 87, 143);
+.petal1
+{
+    position: absolute;
+    background-color: rgb(167, 19, 48);
+    height: 130px;
+    width: 80px;
+    border-radius: 0 100px 100px 100px;
+    margin-right: 40px;
+    margin-bottom: 30px;
+    /* margin-top: 100px; */
+    /* rotate: 10; */
+    /* transform: rotate(90deg); */
+    animation: petal-anim 3s ease 1;
+    z-index: 0;
+}
+.petal2
+{
+    position: absolute;
+    background-color: rgb(195, 44, 74);
+    height: 130px;
+    width: 80px;
+    border-radius: 0 100px 100px 100px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+    /* rotate: 10; */
+    transform: rotateY(180deg);
+    animation: petal-anim 5s ease 1;
+
+    z-index: 0;
+}
+.petal3
+{
+    position: absolute;
+    background-color: rgb(214, 118, 137);
+    height: 130px;
+    width: 80px;
+    border-radius: 0 100px 100px 100px;
+    margin-left: 50px;
+    animation: petal-anim 6s ease 1;
+    /* rotate: 10; */
+    transform: rotateY(180deg);
+    z-index: 0;
+}
+.petal4
+{
+    position: absolute;
+    background-color: rgb(108, 10, 31);
+    height: 130px;
+    width: 80px;
+    animation: petal-anim 8s ease 1;
+    border-radius: 0 100px 100px 100px;
+    margin-right: 50px;
+    /* rotate: 10; */
+    /* transform: rotate(90deg); */
+    z-index: 1;
+}
+.petal5
+{
+    position: absolute;
+    background-color: rgb(144, 26, 50);
+    height: 100px;
+    width: 80px;
+    border-radius: 0 100px 100px 100px;
+    margin-right: 20px;
+    margin-top: 40px;
+    /* rotate: 10; */
+    /* transform: rotate(90deg); */
+    animation: petal-5-anim 9s ease 1;
+    z-index: 1;
+}
+.stem
+{
+    height: 50vh;
+    width: 10px;
+    background-color: rgb(3, 68, 3);
+    /* z-index: 100; */
+    margin-top: 450px;
+    animation: stem-anim 2s ease-in-out;
+    /* visibility: hidden; */
 }
 
-/* .btn:click */
+.leaf1{
+    position: absolute;
+    background-color: rgb(10, 108, 48);
+    height: 60px;
+    width: 60px;
+    animation: leaf1-anim 8s ease 1;
+    border-radius: 0px 100px 0 100px;
+    margin-right: 50px;
+    margin-top: 270px;
+    z-index: 1;
+}
 
+.leaf2{
+    position: absolute;
+    background-color: rgb(10, 108, 48);
+    height: 50px;
+    width: 50px;
+    border-radius: 0px 100px 0 100px;
+    margin-left: 50px;
+    margin-top: 400px;
+    /* rotate: 10; */
+    animation: leaf2-anim 8s ease 1;
+
+    transform: rotateY(190deg);
+    z-index: 1;
+}
+
+@keyframes stem-anim {
+    0%{
+        /* bottom: 0; */
+        margin-top: 1000px;
+        opacity: 0;
+        z-index: 0;
+    }
+    50%
+    {
+        opacity: 100;
+        z-index: 0;
+    }
+    100%{
+    margin-top: 450px;
+    opacity: 100;
+    z-index: 0;
+    }
+    
+}
+
+@keyframes rose-anim {
+    0%{opacity: 0;}
+    50%{opacity: 0;}
+    100%{opacity: 1;}
+    
+}
+
+@keyframes petal-anim {
+    0%{opacity: 0; margin-top: 200px;}
+    50%{opacity: 0;margin-top: 100px;}
+    100%{opacity: 1; margin-top: 0;}
+}
+@keyframes petal-5-anim {
+    0%{opacity: 0;}
+    50%{opacity: 0;margin-top: 90px;}
+    100%{opacity: 1; margin-top: 40px;}
+}
+
+@keyframes leaf1-anim {
+    0%{opacity: 0;margin-right: 0px;}
+    10%{margin-right: 30px;}
+    50%{        margin-right: 40px;
+    }
+    100%{opacity: 1;
+        margin-right: 50px;
+    }
+    
+}
+
+@keyframes leaf2-anim {
+    0%{opacity: 0;margin-left: 10px;}
+    50%{        margin-left: 30px;
+    }
+    100%{opacity: 1;
+        margin-left: 50px;
+    }
+    
+}
 
 @media (max-width:600px) {
-    .card-container
+    .rose-main
     {
-        padding: 10px;
+        width: 200px;
     }
-    .card
-    {
-        height: 350px;
-        width: 300px;
-    }   
-    .txt1, .txt2{
-        font-size: 15px;
-    }
-    .heading
-    {
-        font-size: 20px;
-        padding-left: 10px;
-        padding-right:10px;
-        padding-bottom: 10px;
+    html,body{overflow: hidden;}
+    #head{font-size: 40px;
+        max-height: 40px;
     }
 }
